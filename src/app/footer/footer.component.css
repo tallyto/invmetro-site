@@ -1,0 +1,39 @@
+.footer {
+  background-color: #333;
+  /* Cor do rodapé */
+  color: #fff;
+  /* Cor do texto */
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-info {
+  margin: 10px;
+  flex-wrap: wrap;
+}
+
+.unit-info {
+  max-width: 400px;
+  /* Ajuste o valor conforme necessário */
+}
+
+.unit-info h3 {
+  color: #fff;
+  /* Cor do título */
+}
+
+.whatsapp-button a {
+  background-color: #4CAF50;
+  /* Cor do botão de WhatsApp */
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.whatsapp-button a:hover {
+  background-color: #45a049;
+}

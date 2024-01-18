@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+.green-banner {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.white-banner {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.white-banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
