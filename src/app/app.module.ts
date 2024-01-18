@@ -12,6 +12,7 @@ import { TableCuritibaComponent } from './table-curitiba/table-curitiba.componen
 import { TableCampoLargoComponent } from './table-campo-largo/table-campo-largo.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { FaqComponent } from './faq/faq.component';
+import { ContatoComponent } from './contato/contato.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FaqComponent } from './faq/faq.component';
     TableCuritibaComponent,
     TableCampoLargoComponent,
     SobreComponent,
-    FaqComponent
+    FaqComponent,
+    ContatoComponent
   ],
   imports: [
     BrowserModule,
