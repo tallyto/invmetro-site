@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { ServicosComponent } from './servicos/servicos.component';
 import { TableCuritibaComponent } from './table-curitiba/table-curitiba.component';
 import { TableCampoLargoComponent } from './table-campo-largo/table-campo-largo.component';
+import { SobreComponent } from './sobre/sobre.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { TableCampoLargoComponent } from './table-campo-largo/table-campo-largo.
     HomeComponent,
     ServicosComponent,
     TableCuritibaComponent,
-    TableCampoLargoComponent
+    TableCampoLargoComponent,
+    SobreComponent
   ],
   imports: [
     BrowserModule,
