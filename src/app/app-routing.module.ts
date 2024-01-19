@@ -7,12 +7,13 @@ import {FaqComponent} from "./faq/faq.component";
 import {ContatoComponent} from "./contato/contato.component";
 
 const routes: Routes = [
-  {path: '', redirectTo: 'inicio', pathMatch: "full"},
+  {path: '', component: HomeComponent},
   {path: 'inicio', component: HomeComponent},
   {path: 'servicos', component: ServicosComponent},
   {path: 'sobre', component: SobreComponent},
   {path: 'contato', component: ContatoComponent},
-  {path: 'duvidas', component: FaqComponent}
+  {path: 'duvidas', component: FaqComponent},
+  {path: '**', redirectTo: 'inicio'}
 ];
 
 @NgModule({
