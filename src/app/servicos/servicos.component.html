@@ -71,10 +71,9 @@
               <br>
               <p>– CRLV/CRV ou Nota Fiscal de aquisição (Certidão de Registro de veículo);</p>
               <p>– RG/CPF ou CNH (Documento de identificação do proprietário ou condutor do veículo);</p>
-              <p>– No caso de inclusão de GNV: notas fiscais do serviço (peças e mão-de- obra) e atestado de qualidade
+              <p>– Notas fiscais do serviço (peças e mão-de- obra) e atestado de qualidade
                 do
                 instalador (é obrigatório o instalador dar na hora de entregar as notas);</p>
-              <p>– No caso de retirada: notas fiscais do serviço (peças e mão-de-obra).</p>
             </ng-template>
           </div>
         </div>
@@ -110,6 +109,10 @@
               <p>– CRLV/CRV ou Nota Fiscal de aquisição (Certidão de Registro de veículo);</p>
               <p>– RG/CPF ou CNH (Documento de identificação do proprietário ou condutor do veículo);</p>
               <p>– Notas fiscais da modificação (peças e mão-de-obra).</p>
+              <p>- CAT - Certificado de adequação as Leis de transito (quando aplicável) </p>
+              <p>- ART do Engenheiro (quando aplicável)</p>
+              <p>- Aferição do Tacógrafo (quando aplicável)</p>
+
             </ng-template>
           </div>
         </div>
@@ -129,6 +132,7 @@
               <br>
               <p>– CRLV/CRV ou Nota Fiscal de aquisição (Certidão de Registro de veículo);</p>
               <p>– RG/CPF ou CNH (Documento de identificação do proprietário ou condutor do veículo);</p>
+              <p>- Aferição do Tacógrafo (quando aplicável)</p>
               <br>
               <p>Tipos de inspeções especiais (como fabricação artesanal) ou para atender clientes ou normas
                 específicas,
@@ -176,7 +180,7 @@
               <p>– CRLV/CRV ou Nota Fiscal de aquisição (Certidão de Registro de veículo);</p>
               <p>– RG/CPF ou CNH (Documento de identificação do proprietário ou condutor do veículo).</p>
               <br>
-              <p>Valor para qualquer veículo – R$ 470,00</p>
+              <p>Valor para qualquer veículo – R$ 500,00</p>
 
             </ng-template>
           </div>
@@ -193,24 +197,24 @@
 
   <div class="container">
 
-  <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
-    <li [ngbNavItem]="1">
-      <button ngbNavLink>Unidade Curitiba</button>
-      <ng-template ngbNavContent>
-        <app-table-curitiba></app-table-curitiba>
-      </ng-template>
-    </li>
-    <li [ngbNavItem]="2">
-      <button ngbNavLink>Unidade Campo Largo</button>
-      <ng-template ngbNavContent>
-        <app-table-campo-largo></app-table-campo-largo>
-      </ng-template>
-    </li>
-  </ul>
+    <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+      <li [ngbNavItem]="1">
+        <button ngbNavLink>Unidade Curitiba</button>
+        <ng-template ngbNavContent>
+          <app-table-curitiba></app-table-curitiba>
+        </ng-template>
+      </li>
+      <li [ngbNavItem]="2">
+        <button ngbNavLink>Unidade Campo Largo</button>
+        <ng-template ngbNavContent>
+          <app-table-campo-largo></app-table-campo-largo>
+        </ng-template>
+      </li>
+    </ul>
 
-  <div [ngbNavOutlet]="nav" class="mt-2"></div>
-
-  </div>
+    <div [ngbNavOutlet]="nav" class="mt-2"></div>
 
   </div>
+
+</div>
 
