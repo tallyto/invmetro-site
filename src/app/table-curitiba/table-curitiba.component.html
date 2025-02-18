@@ -1,85 +1,22 @@
 <div class="table-responsive">
   <table class="table table-striped">
     <thead>
-    <tr>
-      <th scope="col">Veículo</th>
-      <th scope="col">GNV</th>
-      <th scope="col">Sinistro/Modificado</th>
-      <th scope="col">Fabricação Artesanal</th>
-      <th scope="col">ANTT/DER/URBS</th>
-    </tr>
+      <tr>
+        <th scope="col">Veículo</th>
+        <th scope="col">GNV</th>
+        <th scope="col">Sinistro/Modificado</th>
+        <th scope="col">Fabricação Artesanal</th>
+        <th scope="col">ANTT/DER/URBS</th>
+      </tr>
     </thead>
     <tbody>
-    <tr>
-      <th scope="row">Automóvel</th>
-      <td>R$ 440,00</td>
-      <td>R$ 530,00</td>
-      <td>R$ 2.500,00</td>
-      <td>X</td>
-    </tr>
-    <tr>
-      <th scope="row">Automóvel Rebaixado</th>
-      <td>R$ 440,00</td>
-      <td>R$ 530,00</td>
-      <td>X</td>
-      <td>X</td>
-    </tr>
-    <tr>
-      <th scope="row">Veículo Blindado</th>
-      <td>R$ 440,00</td>
-      <td>R$ 850,00</td>
-      <td>X</td>
-      <td>X</td>
-    </tr>
-    <tr>
-      <th scope="row">Utilitário/camioneta/caminhonete</th>
-      <td>R$ 440,00</td>
-      <td>R$ 580,00</td>
-      <td>R$ 2.500,00</td>
-      <td>X</td>
-    </tr>
-    <tr>
-      <th scope="row">Microônibus</th>
-      <td>R$ 440,00</td>
-      <td>R$ 650,00</td>
-      <td>X</td>
-      <td>R$ 480,00</td>
-    </tr>
-    <tr>
-      <th scope="row">Ônibus</th>
-      <td>R$ 900,00</td>
-      <td>R$ 900,00</td>
-      <td>X</td>
-      <td>R$ 550,00</td>
-    </tr>
-    <tr>
-      <th scope="row">Caminhão</th>
-      <td>R$ 900,00</td>
-      <td>R$ 900,00</td>
-      <td>X</td>
-      <td>X</td>
-    </tr>
-    <tr>
-      <th scope="row">Motocicleta/motoneta/ciclomotor até 300 cc</th>
-      <td>X</td>
-      <td>R$ 450,00</td>
-      <td>R$ 2.500,00</td>
-      <td>X</td>
-    </tr>
-    <tr>
-      <th scope="row">Motocicleta/motoneta/ciclomotor acima de 300 cc</th>
-      <td>X</td>
-      <td>R$ 600,00</td>
-      <td>R$ 2.500,00</td>
-      <td>X</td>
-    </tr>
-    <tr>
-      <th scope="row">Triciclo/quadriciclo</th>
-      <td>X</td>
-      <td>R$ 1000,00</td>
-      <td>R$ 2.500,00</td>
-      <td>X</td>
-    </tr>
+      <tr *ngFor="let veiculo of veiculosData">
+        <th scope="row">{{ veiculo.veiculo }}</th>
+        <td>{{ veiculo.gnv }}</td>
+        <td>{{ veiculo.sinistro }}</td>
+        <td>{{ veiculo.artesanal }}</td>
+        <td>{{ veiculo.antt }}</td>
+      </tr>
     </tbody>
   </table>
 </div>
@@ -89,52 +26,16 @@
 <div class="table-responsive">
   <table class="table table-striped">
     <thead>
-    <tr>
-      <th scope="col">Serviços</th>
-      <th scope="col">Valor</th>
-    </tr>
+      <tr>
+        <th scope="col">Serviços</th>
+        <th scope="col">Valor</th>
+      </tr>
     </thead>
     <tbody>
-    <tr>
-      <th scope="row">Basculante (Periódico - Res 859/21 Contran)</th>
-      <td>R$ 550,00</td>
-    </tr>
-    <tr>
-      <th scope="row">Laudo Escolar</th>
-      <td>R$ 500,00</td>
-    </tr>
-    <tr>
-      <th scope="row">Laudo Seguradora/URBS (Taxi)</th>
-      <td>Preço Sinistro</td>
-    </tr>
-    <tr>
-      <th scope="row">Laudo Opacidade + Ruído</th>
-      <td>R$ 180,00</td>
-    </tr>
-    <tr>
-      <th scope="row">Ensaio de Torção</th>
-      <td>R$ 500,00</td>
-    </tr>
-    <tr>
-      <th scope="row">Motocicleta URBS (motofrete)</th>
-      <td>R$ 200,00</td>
-    </tr>
-    <tr>
-      <th scope="row">Laudo Ônibus COMEC</th>
-      <td>R$ 460,00</td>
-    </tr>
-    <tr>
-      <th scope="row">Motor-Casa</th>
-      <td>R$ 1.800,00</td>
-    </tr>
-    <tr>
-      <th scope="row">CITV Mercosul</th>
-      <td>R$ 500,00</td>
-    </tr>
-    <tr>
-      <th scope="row">Retirada de GNV</th>
-      <td>R$ 650,00</td>
-    </tr>
+      <tr *ngFor="let servico of servicosData">
+        <th scope="row">{{ servico.servico }}</th>
+        <td>{{ servico.valor }}</td>
+      </tr>
     </tbody>
   </table>
 </div>
