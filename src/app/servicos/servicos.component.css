@@ -2,7 +2,7 @@
 .hero-section {
   position: relative;
   height: 350px;
-  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  background: #28a745;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,17 +67,18 @@
 
 .accordion-item-custom {
   background: white;
-  border: 1px solid #e9ecef;
-  border-radius: 12px;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
   margin-bottom: 15px;
   overflow: hidden;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   transition: all 0.3s ease;
 }
 
 .accordion-item-custom:hover {
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
   transform: translateY(-1px);
+  border-color: #e9ecef;
 }
 
 .accordion-button-custom {
@@ -181,8 +182,8 @@
 .nav-pills .nav-link-custom {
   background: #f8f9fa;
   color: #495057;
-  border: 1px solid #dee2e6;
-  border-radius: 50px;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
   padding: 12px 25px;
   font-weight: 600;
   font-size: 0.95rem;
@@ -197,7 +198,7 @@
   background: #e9ecef;
   color: #28a745;
   transform: translateY(-1px);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .nav-pills .nav-link-custom.active {
@@ -205,7 +206,7 @@
   color: white;
   border-color: #28a745;
   transform: translateY(-1px);
-  box-shadow: 0 3px 10px rgba(40, 167, 69, 0.3);
+  box-shadow: 0 2px 8px rgba(40, 167, 69, 0.2);
 }
 
 .nav-pills .nav-link-custom i {
@@ -215,22 +216,22 @@
 
 .tab-content-wrapper {
   background: white;
-  border-radius: 12px;
-  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  border: 1px solid #f0f0f0;
   padding: 20px;
   margin-top: 20px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 /* Alert Box */
 .alert-info {
-  background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+  background: #f0f8ff;
   color: #1565c0;
   border: 1px solid #bbdefb;
-  border-radius: 10px;
+  border-radius: 6px;
   padding: 15px;
   margin-top: 20px;
-  box-shadow: 0 2px 8px rgba(21, 101, 192, 0.1);
+  box-shadow: 0 1px 4px rgba(21, 101, 192, 0.08);
 }
 
 .alert h6 {
@@ -284,35 +285,35 @@ a:hover {
   .hero-title {
     font-size: 2rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1rem;
   }
-  
+
   .section-title {
     font-size: 1.8rem;
   }
-  
+
   .accordion-button-custom {
     padding: 15px 20px;
     font-size: 0.95rem;
   }
-  
+
   .accordion-content {
     padding: 18px 20px;
   }
-  
+
   .services-section,
   .pricing-section {
     padding: 2.5rem 0;
   }
-  
+
   .nav-pills .nav-link-custom {
     margin: 5px 0;
     padding: 10px 20px;
     font-size: 0.9rem;
   }
-  
+
   .tab-content-wrapper {
     padding: 18px;
   }
@@ -322,48 +323,48 @@ a:hover {
   .hero-section {
     height: 280px;
   }
-  
+
   .hero-title {
     font-size: 1.8rem;
   }
-  
+
   .hero-subtitle {
     font-size: 0.95rem;
   }
-  
+
   .services-section,
   .pricing-section {
     padding: 2rem 0;
   }
-  
+
   .section-title {
     font-size: 1.6rem;
   }
-  
+
   .accordion-button-custom {
     padding: 12px 18px;
     font-size: 0.9rem;
   }
-  
+
   .accordion-button-custom i {
     margin-right: 10px;
     font-size: 1rem;
   }
-  
+
   .accordion-content {
     padding: 15px 18px;
   }
-  
+
   .nav-pills .nav-link-custom {
     margin: 5px 0;
     padding: 8px 18px;
     font-size: 0.85rem;
   }
-  
+
   .tab-content-wrapper {
     padding: 15px;
   }
-  
+
   .services-accordion {
     max-width: 100%;
   }
