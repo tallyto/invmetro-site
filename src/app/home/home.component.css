@@ -121,12 +121,12 @@
 
 .service-icon {
   text-align: center;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
 .service-image {
-  width: 70px;
-  height: 70px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #28a745;
@@ -234,7 +234,7 @@
   .alert-banner .col-lg-4 {
     margin-top: 1rem;
   }
-  
+
   .alert-banner {
     padding: 1.2rem 0;
   }
@@ -246,7 +246,7 @@
   .about-title {
     font-size: 1.7rem;
   }
-  
+
   .services-section,
   .about-section {
     padding: 2.5rem 0;
@@ -261,7 +261,7 @@
   .hero-title {
     font-size: 1.9rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1rem;
   }
@@ -274,15 +274,15 @@
   .service-card {
     padding: 1.2rem;
   }
-  
+
   .section-title {
     font-size: 1.6rem;
   }
-  
+
   .about-title {
     font-size: 1.5rem;
   }
-  
+
   .alert-banner {
     padding: 1rem 0;
   }
