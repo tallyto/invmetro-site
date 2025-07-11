@@ -1,27 +1,122 @@
-# InvmetroSite
+# InvMetro - Site Institucional
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.3.
+Site institucional da InvMetro, empresa especializada em inspeção veicular e serviços automotivos.
 
-## Development server
+## 🚀 Tecnologias
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Angular 16** - Framework principal
+- **Bootstrap 5** - Framework CSS
+- **ng-bootstrap** - Componentes Bootstrap para Angular
+- **TypeScript** - Linguagem de programação
+- **RxJS** - Biblioteca para programação reativa
 
-## Code scaffolding
+## 📋 Funcionalidades
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- ✅ **Página Inicial** - Apresentação da empresa e serviços
+- ✅ **Serviços** - Detalhamento dos serviços oferecidos
+- ✅ **Sobre** - Informações sobre a empresa
+- ✅ **Contato** - Formulário de contato e informações
+- ✅ **FAQ** - Perguntas frequentes
+- ✅ **Tabelas de Preços** - Curitiba e Campo Largo
+- ✅ **Design Responsivo** - Compatível com dispositivos móveis
+- ✅ **Scroll Automático** - Volta ao topo ao navegar entre páginas
 
-## Build
+## 🛠️ Desenvolvimento
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Pré-requisitos
 
-## Running unit tests
+- Node.js (versão 16 ou superior)
+- Angular CLI (`npm install -g @angular/cli`)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Instalação
 
-## Running end-to-end tests
+```bash
+# Clone o repositório
+git clone <url-do-repositório>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+# Navegue até o diretório
+cd invmetro-site
 
-## Further help
+# Instale as dependências
+npm install
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Servidor de Desenvolvimento
+
+```bash
+ng serve
+```
+
+Navegue para `http://localhost:4200/`. A aplicação será recarregada automaticamente quando você alterar os arquivos fonte.
+
+### Build de Produção
+
+```bash
+ng build --configuration production
+```
+
+Os arquivos de build serão armazenados no diretório `dist/`.
+
+### Deploy
+
+```bash
+# Deploy para GitHub Pages
+npm run deploy:github
+```
+
+## 📁 Estrutura do Projeto
+
+```text
+src/
+├── app/
+│   ├── components/
+│   │   ├── home/           # Página inicial
+│   │   ├── servicos/       # Página de serviços
+│   │   ├── sobre/          # Página sobre
+│   │   ├── contato/        # Página de contato
+│   │   ├── faq/            # Página FAQ
+│   │   ├── navbar/         # Barra de navegação
+│   │   └── footer/         # Rodapé
+│   ├── shared/             # Componentes compartilhados
+│   │   ├── card/           # Componente de card
+│   │   ├── hero-section/   # Seção hero
+│   │   └── section-header/ # Cabeçalho de seção
+│   └── table-components/   # Componentes de tabela
+├── assets/                 # Recursos estáticos
+└── styles.css             # Estilos globais
+```
+
+## 🔧 Melhorias Recentes
+
+### v1.1.0 - Correção de Navegação
+
+- **Scroll Automático**: Implementado scroll automático para o topo ao navegar entre páginas
+- **Configuração de Rota**: Adicionado `scrollPositionRestoration: 'top'` no RouterModule
+- **Listener de Navegação**: Implementado listener para eventos NavigationEnd
+- **UX Melhorada**: Experiência de usuário mais fluida na navegação
+
+## 🧪 Testes
+
+```bash
+# Executar testes unitários
+ng test
+
+# Executar testes com coverage
+ng test --coverage
+```
+
+## 🤝 Contribuição
+
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-funcionalidade`)
+3. Commit suas mudanças (`git commit -m 'Adiciona nova funcionalidade'`)
+4. Push para a branch (`git push origin feature/nova-funcionalidade`)
+5. Abra um Pull Request
+
+## 📞 Suporte
+
+Para suporte técnico ou dúvidas sobre o projeto, entre em contato através do site ou dos canais oficiais da InvMetro.
+
+---
+
+Desenvolvido com ❤️ para InvMetro
