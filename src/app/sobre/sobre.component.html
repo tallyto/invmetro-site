@@ -1,174 +1,347 @@
 <!-- Hero Section -->
 <div class="hero-section">
   <div class="container">
-    <div class="hero-content">
-      <h1 class="hero-title">A Invmetro</h1>
-      <p class="hero-subtitle">Excelência em inspeção veicular desde 2009</p>
-    </div>
-  </div>
-  <div class="hero-overlay"></div>
-</div>
-
-<!-- About Content Section -->
-<div class="about-content">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="content-card">
-          <p class="content-text">
-            A Invmetro é uma empresa que atua no mercado desde 2009, com instalações em Curitiba (bairro Atuba, próximo ao
-            trevo da antiga Penha) e em Campo Largo (bairro Rondinha, em frente à Igreja da Rondinha).
-          </p>
-
-          <p class="content-text">
-            Com profissionais especializados, como manda a legislação, Engenheiros e Técnicos. Além de atender com respeito à
-            inspeção veicular em si, também auxiliamos nossos clientes com respeito a todas as suas dúvidas com os
-            procedimentos que levaram a inspeção veicular, agindo assim como uma consultoria na resolução dos seus problemas.
-          </p>
-
-          <p class="content-text">
-            É uma instituição técnica licenciada e autorizada a fazer Inspeções de Segurança Veicular (ISV) pelo SENATRAN
-            (Secretaria Nacional de Trânsito) e pela CGCRE (Coordenação Geral de Acreditação do Inmetro), para todo o Brasil.
-          </p>
+    <div class="row align-items-center min-vh-40">
+      <div class="col-lg-6">
+        <h1 class="display-4 fw-bold text-white mb-4">Sobre a Invmetro</h1>
+        <p class="lead text-white-50 mb-4">Excelência em inspeção veicular desde 2009, com tecnologia e profissionalismo.</p>
+        <div class="d-flex gap-3">
+          <button (click)="scrollToSection('nossa-historia')" class="btn btn-light">
+            <i class="fas fa-info-circle me-2"></i>Nossa História
+          </button>
+          <a routerLink="/contato" class="btn btn-outline-light">
+            <i class="fas fa-map-marker-alt me-2"></i>Nossas Unidades
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="hero-image text-center">
+          <i class="fas fa-building fa-10x text-white opacity-25"></i>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Company Stats Section -->
-<div class="stats-section">
+<!-- Nossa História -->
+<section id="nossa-historia" class="py-5">
   <div class="container">
     <div class="row">
-      <div class="col-12 text-center mb-4">
-        <h2 class="section-title">Nossa Experiência</h2>
-        <p class="section-subtitle">Números que demonstram nossa credibilidade</p>
+      <div class="col-12 text-center mb-5">
+        <h2 class="display-5 fw-bold text-success">Nossa História</h2>
+        <p class="lead text-muted">Uma trajetória de mais de 15 anos dedicada à segurança veicular</p>
       </div>
     </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-year">2009</div>
+              <h4>Fundação da Invmetro</h4>
+              <p>A Invmetro iniciou suas atividades no mercado de inspeção veicular, estabelecendo-se em Curitiba no bairro Atuba, próximo ao trevo da antiga Penha.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fas fa-expand-arrows-alt"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-year">Expansão</div>
+              <h4>Nova Unidade em Campo Largo</h4>
+              <p>Para melhor atender nossos clientes, expandimos nossas operações com uma segunda unidade em Campo Largo, no bairro Rondinha, em frente à Igreja da Rondinha.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-year">Certificação</div>
+              <h4>Licenciamento Nacional</h4>
+              <p>Conquistamos o licenciamento e autorização para realizar Inspeções de Segurança Veicular (ISV) pelo SENATRAN e acreditação pela CGCRE do Inmetro para todo o Brasil.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Números da Empresa -->
+<section class="py-5 bg-light">
+  <div class="container">
     <div class="row">
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="stat-card">
+      <div class="col-12 text-center mb-5">
+        <h2 class="display-5 fw-bold text-success">Nossa Experiência em Números</h2>
+        <p class="lead text-muted">Dados que comprovam nossa credibilidade no mercado</p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6">
+        <div class="stat-card h-100">
           <div class="stat-icon">
             <i class="fas fa-calendar-alt"></i>
           </div>
-          <div class="stat-number">15+</div>
+          <div class="stat-number" data-target="16">0</div>
+          <div class="stat-suffix">+</div>
           <div class="stat-label">Anos de Experiência</div>
+          <div class="stat-description">Desde 2009 no mercado</div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="stat-card">
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stat-card h-100">
           <div class="stat-icon">
             <i class="fas fa-map-marker-alt"></i>
           </div>
-          <div class="stat-number">2</div>
+          <div class="stat-number" data-target="2">0</div>
+          <div class="stat-suffix"></div>
           <div class="stat-label">Unidades</div>
+          <div class="stat-description">Curitiba e Campo Largo</div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="stat-card">
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stat-card h-100">
           <div class="stat-icon">
-            <i class="fas fa-certificate"></i>
+            <i class="fas fa-shield-alt"></i>
           </div>
-          <div class="stat-number">100%</div>
+          <div class="stat-number" data-target="100">0</div>
+          <div class="stat-suffix">%</div>
           <div class="stat-label">Licenciada</div>
+          <div class="stat-description">SENATRAN e CGCRE</div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="stat-card">
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stat-card h-100">
           <div class="stat-icon">
             <i class="fas fa-users"></i>
           </div>
-          <div class="stat-number">1000+</div>
+          <div class="stat-number" data-target="10000">0</div>
+          <div class="stat-suffix">+</div>
           <div class="stat-label">Clientes Atendidos</div>
+          <div class="stat-description">Satisfação garantida</div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>
 
-<!-- Features Section -->
-<div class="features-section">
+<!-- Nossos Diferenciais -->
+<section class="py-5">
   <div class="container">
     <div class="row">
-      <div class="col-12 text-center mb-4">
-        <h2 class="section-title">Nossos Diferenciais</h2>
-        <p class="section-subtitle">O que nos torna únicos no mercado</p>
+      <div class="col-12 text-center mb-5">
+        <h2 class="display-5 fw-bold text-success">Nossos Diferenciais</h2>
+        <p class="lead text-muted">O que nos torna únicos no mercado de inspeção veicular</p>
       </div>
     </div>
-    <div class="row">
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="feature-card">
+
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="feature-card h-100">
           <div class="feature-icon">
             <i class="fas fa-user-graduate"></i>
           </div>
-          <h3 class="feature-title">Profissionais Especializados</h3>
+          <h4 class="feature-title">Profissionais Especializados</h4>
           <p class="feature-description">
-            Engenheiros e Técnicos qualificados conforme exigido pela legislação
+            Nossa equipe é formada por Engenheiros e Técnicos qualificados, conforme exigido pela legislação vigente, garantindo precisão e confiabilidade em cada inspeção.
           </p>
+          <div class="feature-list">
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Engenheiros Certificados</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Técnicos Especializados</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="feature-card">
+
+      <div class="col-lg-4 col-md-6">
+        <div class="feature-card h-100">
           <div class="feature-icon">
             <i class="fas fa-handshake"></i>
           </div>
-          <h3 class="feature-title">Consultoria Completa</h3>
+          <h4 class="feature-title">Consultoria Completa</h4>
           <p class="feature-description">
-            Auxiliamos com dúvidas sobre procedimentos e resolução de problemas
+            Além da inspeção veicular, oferecemos consultoria completa, auxiliando nossos clientes com dúvidas sobre procedimentos e resolução de problemas.
           </p>
+          <div class="feature-list">
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Orientação Técnica</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Suporte Personalizado</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="feature-card">
+
+      <div class="col-lg-4 col-md-6">
+        <div class="feature-card h-100">
           <div class="feature-icon">
-            <i class="fas fa-shield-alt"></i>
+            <i class="fas fa-award"></i>
           </div>
-          <h3 class="feature-title">Certificações</h3>
+          <h4 class="feature-title">Certificações Nacionais</h4>
           <p class="feature-description">
-            Licenciada pelo SENATRAN e acreditada pela CGCRE para todo o Brasil
+            Somos licenciados pelo SENATRAN (Secretaria Nacional de Trânsito) e acreditados pela CGCRE (Coordenação Geral de Acreditação do Inmetro) para todo o Brasil.
           </p>
+          <div class="feature-list">
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Licença SENATRAN</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Acreditação CGCRE</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>
 
-<!-- Location Section -->
-<div class="location-section">
+<!-- Nossas Unidades -->
+<section class="py-5 bg-light">
   <div class="container">
     <div class="row">
-      <div class="col-12 text-center mb-4">
-        <h2 class="section-title">Nossas Unidades</h2>
-        <p class="section-subtitle">Estamos presentes em duas cidades para melhor atendê-lo</p>
+      <div class="col-12 text-center mb-5">
+        <h2 class="display-5 fw-bold text-success">Nossas Unidades</h2>
+        <p class="lead text-muted">Duas unidades estratégicas para melhor atendê-lo</p>
       </div>
     </div>
-    <div class="row">
-      <div class="col-lg-6 col-md-12 mb-4">
-        <div class="location-card">
-          <div class="location-icon">
-            <i class="fas fa-building"></i>
+
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="location-card h-100">
+          <div class="location-header">
+            <div class="location-badge">
+              <i class="fas fa-building"></i>
+            </div>
+            <div class="location-info">
+              <h4 class="location-title">Invmetro Curitiba</h4>
+              <p class="location-subtitle">Unidade Matriz</p>
+            </div>
           </div>
-          <h3 class="location-title">Curitiba</h3>
-          <div class="location-address">
-            <p>Bairro Atuba<br>
-            Próximo ao trevo da antiga Penha<br>
-            Curitiba - PR</p>
+
+          <div class="location-details">
+            <div class="detail-row">
+              <div class="detail-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="detail-content">
+                <strong>Localização:</strong> Bairro Atuba<br>
+                Próximo ao trevo da antiga Penha<br>
+                Curitiba - PR
+              </div>
+            </div>
+
+            <div class="detail-row">
+              <div class="detail-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="detail-content">
+                <strong>Horário:</strong><br>
+                Segunda a sexta: 08h às 12h<br>
+                das 13h30min às 17h30min
+              </div>
+            </div>
+
+            <div class="detail-row">
+              <div class="detail-icon">
+                <i class="fab fa-whatsapp"></i>
+              </div>
+              <div class="detail-content">
+                <strong>WhatsApp:</strong><br>
+                <a href="https://api.whatsapp.com/send?phone=554133573939" class="contact-link">(41) 3357-3939</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-lg-6 col-md-12 mb-4">
-        <div class="location-card">
-          <div class="location-icon">
-            <i class="fas fa-building"></i>
+
+      <div class="col-lg-6">
+        <div class="location-card h-100">
+          <div class="location-header">
+            <div class="location-badge">
+              <i class="fas fa-building"></i>
+            </div>
+            <div class="location-info">
+              <h4 class="location-title">Invmetro Campo Largo</h4>
+              <p class="location-subtitle">Unidade Filial</p>
+            </div>
           </div>
-          <h3 class="location-title">Campo Largo</h3>
-          <div class="location-address">
-            <p>Bairro Rondinha<br>
-            Em frente à Igreja da Rondinha<br>
-            Campo Largo - PR</p>
+
+          <div class="location-details">
+            <div class="detail-row">
+              <div class="detail-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="detail-content">
+                <strong>Localização:</strong> Bairro Rondinha<br>
+                Em frente à Igreja da Rondinha<br>
+                Campo Largo - PR
+              </div>
+            </div>
+
+            <div class="detail-row">
+              <div class="detail-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="detail-content">
+                <strong>Horário:</strong><br>
+                Segunda a sexta: 08h30min às 12h<br>
+                das 13h às 17h30min
+              </div>
+            </div>
+
+            <div class="detail-row">
+              <div class="detail-icon">
+                <i class="fab fa-whatsapp"></i>
+              </div>
+              <div class="detail-content">
+                <strong>WhatsApp:</strong><br>
+                <a href="https://api.whatsapp.com/send?phone=554135551300" class="contact-link">(41) 3555-1300</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h3 class="h3 mb-3 text-white">Pronto para agendar sua inspeção?</h3>
+        <p class="lead mb-4 text-white-50">Entre em contato conosco e garante a segurança do seu veículo</p>
+        <div class="d-flex gap-3 justify-content-center">
+          <a routerLink="/contato" class="btn btn-light">
+            <i class="fas fa-phone me-2"></i>Entre em Contato
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=554133573939" class="btn btn-outline-light">
+            <i class="fab fa-whatsapp me-2"></i>WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
