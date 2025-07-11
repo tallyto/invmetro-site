@@ -142,7 +142,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  justify-content: end;
+  justify-content: flex-end;
   color: #95a5a6;
   font-weight: 500;
   font-size: 0.9rem;
