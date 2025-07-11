@@ -1,54 +1,130 @@
-<div class="bg-success text-white text-center py-2">
-<!--  <h1><strong>Atenção!</strong> </h1>-->
-<!--  <br>-->
-<!--  <h2>Nossos telefones estão fora de área nas duas unidades.</h2>-->
-<!--  <br>-->
-<!--  <h4>CONTATO SOMENTE VIA WHATSAPP.</h4>-->
-<!--  <br>-->
-<!--  <h6>Campo Largo – WhatsApp: 41 3555-1300</h6>-->
-<!--  <br>-->
-<!--  <h6>Curitiba – WhatsApp: 41 3357-3939</h6>-->
+<!-- Hero Section -->
+<div class="hero-section">
+  <div class="hero-content">
+    <h1 class="hero-title">Inspeção Veicular de Qualidade</h1>
+    <p class="hero-subtitle">A Invmetro é uma instituição técnica acreditada pela CGCRE e licenciada pelo Senatran</p>
+    <div class="hero-buttons">
+      <a class="btn btn-primary btn-lg" routerLink="/contato">
+        <i class="fas fa-calendar-alt"></i> Agendar Inspeção
+      </a>
+      <a class="btn btn-outline-light btn-lg" routerLink="/servicos">
+        <i class="fas fa-info-circle"></i> Nossos Serviços
+      </a>
+    </div>
+  </div>
+  <div class="hero-overlay"></div>
 </div>
 
-<div class="white-banner text-center bg-light text-dark py-3">
-    <h3 style="color: #4CAF50;">Trabalhamos Com Hora Marcada!</h3>
-    <p>Hora marcada e sem atrasos!</p>
-    <p>Agende seu horário e venha sem se preocupar.</p>
-    <p>Clique no botão e comece uma conversa no WhatsApp.</p>
-  <a class="btn btn-success" routerLink="/contato">Agende Aqui</a>
+<!-- Alert Banner -->
+<div class="alert-banner">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-8">
+        <h4 class="mb-1"><i class="fas fa-clock"></i> Trabalhamos Com Hora Marcada!</h4>
+        <p class="mb-0">Agende seu horário e venha sem se preocupar. Atendimento pontual e sem atrasos!</p>
+      </div>
+      <div class="col-lg-4 text-lg-end">
+        <a class="btn btn-success btn-lg" routerLink="/contato">
+          <i class="fab fa-whatsapp"></i> Agendar WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="bg-success text-center text-white">
-  <div class="row">
-
-    <div class="card" style="width: 22rem;">
-      <img src="assets/gnv.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">GNV</h5>
-        <p class="card-text">Homologação de conversão de combustível para Gás Natural Veicular. Inspeção obrigatória
-          anual, e na inclusão ou retirada do kit.</p>
-        <a routerLink="/servicos" class="btn btn-success">Saiba mais</a>
+<!-- Services Section -->
+<div class="services-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <h2 class="section-title">Nossos Serviços</h2>
+        <p class="section-subtitle">Oferecemos inspeções técnicas especializadas com qualidade e agilidade</p>
       </div>
     </div>
 
-    <div class="card" style="width: 22rem;">
-      <img src="assets/sinistro.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Sinistros</h5>
-        <p class="card-text">Avaliação de sinistros é obrigatória quando há bloqueio por acidente (sinistro).</p>
-        <a routerLink="/servicos" class="btn btn-success">Saiba mais</a>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="service-card">
+          <div class="service-icon">
+            <img src="assets/gnv.jpg" alt="GNV" class="service-image">
+          </div>
+          <div class="service-content">
+            <h5 class="service-title">GNV</h5>
+            <p class="service-description">Homologação de conversão de combustível para Gás Natural Veicular. Inspeção obrigatória anual, e na inclusão ou retirada do kit.</p>
+            <a routerLink="/servicos" class="btn btn-outline-success">
+              <i class="fas fa-arrow-right"></i> Saiba mais
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <div class="card" style="width: 22rem;">
-      <img src="assets/caminhao-carroceria.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Mudança de Carroceria</h5>
-        <p class="card-text">Mudança de carroceria em caminhões. Inspeção em caminhões modificados.</p>
-        <a routerLink="/servicos" class="btn btn-success">Saiba mais</a>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="service-card">
+          <div class="service-icon">
+            <img src="assets/sinistro.jpg" alt="Sinistros" class="service-image">
+          </div>
+          <div class="service-content">
+            <h5 class="service-title">Sinistros</h5>
+            <p class="service-description">Avaliação de sinistros é obrigatória quando há bloqueio por acidente (sinistro). Serviço especializado e confiável.</p>
+            <a routerLink="/servicos" class="btn btn-outline-success">
+              <i class="fas fa-arrow-right"></i> Saiba mais
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="service-card">
+          <div class="service-icon">
+            <img src="assets/caminhao-carroceria.jpg" alt="Mudança de Carroceria" class="service-image">
+          </div>
+          <div class="service-content">
+            <h5 class="service-title">Mudança de Carroceria</h5>
+            <p class="service-description">Mudança de carroceria em caminhões. Inspeção em caminhões modificados com total segurança e qualidade.</p>
+            <a routerLink="/servicos" class="btn btn-outline-success">
+              <i class="fas fa-arrow-right"></i> Saiba mais
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-    <h5> A Invmetro é uma instituição técnica acreditada pela CGCRE e licenciada pelo Senatran, para realização de
-      inspeções de segurança veicular.</h5>
+  </div>
+</div>
+
+<!-- About Section -->
+<div class="about-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h3 class="about-title">Por que escolher a Invmetro?</h3>
+        <p class="about-description">
+          A Invmetro é uma instituição técnica acreditada pela CGCRE e licenciada pelo Senatran,
+          especializada em inspeções de segurança veicular com excelência e credibilidade.
+        </p>
+        <div class="about-features">
+          <div class="feature-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Acreditada pela CGCRE</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Licenciada pelo Senatran</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Atendimento com hora marcada</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Equipe técnica especializada</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="about-image">
+          <img src="assets/logo.png" alt="Invmetro" class="img-fluid">
+        </div>
+      </div>
+    </div>
   </div>
 </div>
