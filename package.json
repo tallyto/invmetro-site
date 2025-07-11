@@ -7,7 +7,7 @@
     "build": "ng build --configuration production --base-href=/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy:github": "angular-cli-ghpages --dir=dist/invmetro-site"
+    "deploy:github": "npx angular-cli-ghpages --dir=dist/invmetro-site"
   },
   "private": true,
   "dependencies": {
