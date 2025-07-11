@@ -1,114 +1,328 @@
-<div class="bg-success text-white text-center py-5">
-  <h1>FAQ</h1>
-  <h3>Perguntas frequentes</h3>
-</div>
-
-<div class="container mt-4 mb-4">
-  <div ngbAccordion>
-    <div ngbAccordionItem>
-      <h2 ngbAccordionHeader>
-        <button ngbAccordionButton>Vocês trabalham com agendamento?</button>
-      </h2>
-      <div ngbAccordionCollapse>
-        <div ngbAccordionBody>
-          <ng-template>
-            Sim, <a routerLink="/contato">clique aqui</a> para agendar.
-          </ng-template>
+<!-- Hero Section -->
+<div class="hero-section">
+  <div class="container">
+    <div class="row align-items-center min-vh-40">
+      <div class="col-lg-6">
+        <h1 class="display-4 fw-bold text-white mb-4">Perguntas Frequentes</h1>
+        <p class="lead text-white-50 mb-4">Tire todas as suas dúvidas sobre nossos serviços de inspeção veicular.</p>
+        <div class="d-flex gap-3">
+          <button (click)="scrollToSection('faq-content')" class="btn btn-light">
+            <i class="fas fa-question-circle me-2"></i>Ver Perguntas
+          </button>
+          <a routerLink="/contato" class="btn btn-outline-light">
+            <i class="fas fa-phone me-2"></i>Fale Conosco
+          </a>
         </div>
       </div>
-    </div>
-    <div ngbAccordionItem>
-      <h2 ngbAccordionHeader>
-        <button ngbAccordionButton>Qual a forma de pagamento? Parcela?</button>
-      </h2>
-      <div ngbAccordionCollapse>
-        <div ngbAccordionBody>
-          <ng-template>
-            Dinheiro, Cartão de Débito ou Crédito e Pix. Parcelamos até 3 vezes.
-          </ng-template>
-        </div>
-      </div>
-    </div>
-    <div ngbAccordionItem>
-      <h2 ngbAccordionHeader>
-        <button ngbAccordionButton>Se caso veículo reprove, terei prazo? E paga novamente para retornar?</button>
-      </h2>
-      <div ngbAccordionCollapse>
-        <div ngbAccordionBody>
-          <ng-template>
-            Sim, terá prazo de 30 dias corridos e dentro desse prazo não precisa pagar
-            nova taxa.
-          </ng-template>
-        </div>
-      </div>
-    </div>
-    <div ngbAccordionItem>
-      <h2 ngbAccordionHeader>
-        <button ngbAccordionButton>Qual o horário de funcionamento da empresa?</button>
-      </h2>
-      <div ngbAccordionCollapse>
-        <div ngbAccordionBody>
-          <ng-template>
-            <p>Nossos horários são diferentes para cada empresa.</p>
-            <p>Invmetro Curitiba</p>
-            <p>Segunda a sexta: 08h às 12h das 13h30min às 17h30min</p>
-            <p>Invmetro Campo Largo</p>
-            <p>Segunda a sexta: 08h30min às 12h das 13h às 17h30min</p>
-          </ng-template>
-        </div>
-      </div>
-    </div>
-    <div ngbAccordionItem>
-      <h2 ngbAccordionHeader>
-        <button ngbAccordionButton>Quais os itens que são verificados na inspeção?</button>
-      </h2>
-      <div ngbAccordionCollapse>
-        <div ngbAccordionBody>
-          <ng-template>
-            <p>São todos os itens da parte se segurança veicular.</p>
-            <p>Como são mais de 60 itens inspecionados, em resumo:</p>
-            <p>EQUIPAMENTOS OBRIGATÓRIOS; SISTEMA DE SINALIZAÇÃO; SISTEMA
-              DE ILUMINAÇÃO; SISTEMAS DE FREIOS; SISTEMA DE DIREÇÃO;
-              SISTEMA DE SUSPENSÃO; PNEUS E RODAS; PORTAS E TAMPAS,
-              VIDROS E JANELAS, BANCOS, SISTEMA DE EXAUSTÃO, DIMENSÕES,
-              ENGATE (QUINTA RODA), PÁRA-BRISA, MOTOR, CHASSI/ESTRUTURA,
-              SISTEMA ELÉTRICO (BATERIA), SISTEMA DE TRANSMISSÃO; EMISSÃO
-              DE POLUENTES E RUÍDO.</p>
-          </ng-template>
-        </div>
-      </div>
-    </div>
-    <div ngbAccordionItem>
-      <h2 ngbAccordionHeader>
-        <button ngbAccordionButton>Quais os documentos necessários para realizar a inspeção?</button>
-      </h2>
-      <div ngbAccordionCollapse>
-        <div ngbAccordionBody>
-          <ng-template>
-            <ul class="services-list">
-              <li>CRLV/CRV (Certidão de Registro de veículo);</li>
-              <li>RG/CPF ou CNH (Documento de identificação do proprietário ou
-                condutor do veículo);</li>
-              <li>Selo de inspeção emitido na inspeção do ano anterior (inspeção de GNV
-                periódica);</li>
-              <li>Notas fiscais da modificação (peças e mão-de-obra).</li>
-            </ul>
-          </ng-template>
-        </div>
-      </div>
-    </div>
-    <div ngbAccordionItem>
-      <h2 ngbAccordionHeader>
-        <button ngbAccordionButton>A inspeção que preciso realizar necessita de autorização do DETRAN?</button>
-      </h2>
-      <div ngbAccordionCollapse>
-        <div ngbAccordionBody>
-          <ng-template>
-            <p>Autorização prévia é obrigatória para inspeção de veículos sinistrados e
-              veículos modificados, tanto para inclusão ou retirada do kit GNV.</p>
-          </ng-template>
+      <div class="col-lg-6">
+        <div class="hero-image text-center">
+          <i class="fas fa-question-circle fa-10x text-white opacity-25"></i>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<!-- FAQ Content -->
+<section id="faq-content" class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <h2 class="display-5 fw-bold text-success">Dúvidas Frequentes</h2>
+        <p class="lead text-muted">Encontre respostas para as principais perguntas sobre inspeção veicular</p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="faq-wrapper">
+          <div class="accordion" id="faqAccordion">
+
+            <!-- FAQ Item 1 -->
+            <div class="faq-item">
+              <div class="faq-header" id="faq1">
+                <button class="faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                  <div class="faq-icon">
+                    <i class="fas fa-calendar-alt"></i>
+                  </div>
+                  <div class="faq-title">
+                    <h5>Vocês trabalham com agendamento?</h5>
+                  </div>
+                  <div class="faq-toggle">
+                    <i class="fas fa-plus"></i>
+                  </div>
+                </button>
+              </div>
+              <div id="collapse1" class="collapse" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+                <div class="faq-body">
+                  <p>Sim, trabalhamos com agendamento para sua comodidade. <a routerLink="/contato" class="faq-link">Clique aqui para entrar em contato</a> e agendar sua inspeção.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="faq-item">
+              <div class="faq-header" id="faq2">
+                <button class="faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                  <div class="faq-icon">
+                    <i class="fas fa-credit-card"></i>
+                  </div>
+                  <div class="faq-title">
+                    <h5>Qual a forma de pagamento? Parcela?</h5>
+                  </div>
+                  <div class="faq-toggle">
+                    <i class="fas fa-plus"></i>
+                  </div>
+                </button>
+              </div>
+              <div id="collapse2" class="collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+                <div class="faq-body">
+                  <p>Aceitamos as seguintes formas de pagamento:</p>
+                  <ul>
+                    <li>Dinheiro</li>
+                    <li>Cartão de Débito</li>
+                    <li>Cartão de Crédito</li>
+                    <li>Pix</li>
+                  </ul>
+                  <p><strong>Parcelamos até 3 vezes</strong> no cartão de crédito.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="faq-item">
+              <div class="faq-header" id="faq3">
+                <button class="faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                  <div class="faq-icon">
+                    <i class="fas fa-redo-alt"></i>
+                  </div>
+                  <div class="faq-title">
+                    <h5>Se o veículo reprovar, terei prazo? Pago novamente para retornar?</h5>
+                  </div>
+                  <div class="faq-toggle">
+                    <i class="fas fa-plus"></i>
+                  </div>
+                </button>
+              </div>
+              <div id="collapse3" class="collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+                <div class="faq-body">
+                  <p>Sim, você terá <strong>prazo de 30 dias corridos</strong> para corrigir os problemas encontrados.</p>
+                  <p>Dentro desse prazo, <strong>não precisa pagar nova taxa</strong> para retornar com o veículo.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="faq-item">
+              <div class="faq-header" id="faq4">
+                <button class="faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                  <div class="faq-icon">
+                    <i class="fas fa-clock"></i>
+                  </div>
+                  <div class="faq-title">
+                    <h5>Qual o horário de funcionamento?</h5>
+                  </div>
+                  <div class="faq-toggle">
+                    <i class="fas fa-plus"></i>
+                  </div>
+                </button>
+              </div>
+              <div id="collapse4" class="collapse" aria-labelledby="faq4" data-bs-parent="#faqAccordion">
+                <div class="faq-body">
+                  <div class="schedule-grid">
+                    <div class="schedule-item">
+                      <h6><i class="fas fa-map-marker-alt me-2"></i>Invmetro Curitiba</h6>
+                      <p>Segunda a sexta: 08h às 12h das 13h30min às 17h30min</p>
+                    </div>
+                    <div class="schedule-item">
+                      <h6><i class="fas fa-map-marker-alt me-2"></i>Invmetro Campo Largo</h6>
+                      <p>Segunda a sexta: 08h30min às 12h das 13h às 17h30min</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="faq-item">
+              <div class="faq-header" id="faq5">
+                <button class="faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                  <div class="faq-icon">
+                    <i class="fas fa-search"></i>
+                  </div>
+                  <div class="faq-title">
+                    <h5>Quais itens são verificados na inspeção?</h5>
+                  </div>
+                  <div class="faq-toggle">
+                    <i class="fas fa-plus"></i>
+                  </div>
+                </button>
+              </div>
+              <div id="collapse5" class="collapse" aria-labelledby="faq5" data-bs-parent="#faqAccordion">
+                <div class="faq-body">
+                  <p>São verificados todos os itens de segurança veicular. <strong>Mais de 60 itens inspecionados</strong>, incluindo:</p>
+                  <div class="inspection-grid">
+                    <div class="inspection-category">
+                      <h6>Equipamentos e Sistemas</h6>
+                      <ul>
+                        <li>Equipamentos obrigatórios</li>
+                        <li>Sistema de sinalização</li>
+                        <li>Sistema de iluminação</li>
+                        <li>Sistemas de freios</li>
+                        <li>Sistema de direção</li>
+                        <li>Sistema de suspensão</li>
+                      </ul>
+                    </div>
+                    <div class="inspection-category">
+                      <h6>Estrutura e Componentes</h6>
+                      <ul>
+                        <li>Pneus e rodas</li>
+                        <li>Portas e tampas</li>
+                        <li>Vidros e janelas</li>
+                        <li>Bancos e para-brisa</li>
+                        <li>Chassi/estrutura</li>
+                        <li>Motor e transmissão</li>
+                      </ul>
+                    </div>
+                    <div class="inspection-category">
+                      <h6>Outros Sistemas</h6>
+                      <ul>
+                        <li>Sistema de exaustão</li>
+                        <li>Sistema elétrico (bateria)</li>
+                        <li>Engate (quinta roda)</li>
+                        <li>Dimensões</li>
+                        <li>Emissão de poluentes</li>
+                        <li>Ruído</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ Item 6 -->
+            <div class="faq-item">
+              <div class="faq-header" id="faq6">
+                <button class="faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                  <div class="faq-icon">
+                    <i class="fas fa-file-alt"></i>
+                  </div>
+                  <div class="faq-title">
+                    <h5>Quais documentos são necessários?</h5>
+                  </div>
+                  <div class="faq-toggle">
+                    <i class="fas fa-plus"></i>
+                  </div>
+                </button>
+              </div>
+              <div id="collapse6" class="collapse" aria-labelledby="faq6" data-bs-parent="#faqAccordion">
+                <div class="faq-body">
+                  <p>Documentos necessários para realizar a inspeção:</p>
+                  <div class="documents-list">
+                    <div class="document-item">
+                      <div class="document-icon">
+                        <i class="fas fa-id-card"></i>
+                      </div>
+                      <div class="document-info">
+                        <h6>CRLV/CRV</h6>
+                        <p>Certidão de Registro de veículo</p>
+                      </div>
+                    </div>
+                    <div class="document-item">
+                      <div class="document-icon">
+                        <i class="fas fa-user"></i>
+                      </div>
+                      <div class="document-info">
+                        <h6>RG/CPF ou CNH</h6>
+                        <p>Documento de identificação do proprietário ou condutor</p>
+                      </div>
+                    </div>
+                    <div class="document-item">
+                      <div class="document-icon">
+                        <i class="fas fa-certificate"></i>
+                      </div>
+                      <div class="document-info">
+                        <h6>Selo de inspeção anterior</h6>
+                        <p>Para inspeção de GNV periódica</p>
+                      </div>
+                    </div>
+                    <div class="document-item">
+                      <div class="document-icon">
+                        <i class="fas fa-receipt"></i>
+                      </div>
+                      <div class="document-info">
+                        <h6>Notas fiscais</h6>
+                        <p>Da modificação (peças e mão-de-obra)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ Item 7 -->
+            <div class="faq-item">
+              <div class="faq-header" id="faq7">
+                <button class="faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                  <div class="faq-icon">
+                    <i class="fas fa-stamp"></i>
+                  </div>
+                  <div class="faq-title">
+                    <h5>Preciso de autorização do DETRAN?</h5>
+                  </div>
+                  <div class="faq-toggle">
+                    <i class="fas fa-plus"></i>
+                  </div>
+                </button>
+              </div>
+              <div id="collapse7" class="collapse" aria-labelledby="faq7" data-bs-parent="#faqAccordion">
+                <div class="faq-body">
+                  <p><strong>Autorização prévia é obrigatória</strong> para os seguintes casos:</p>
+                  <div class="authorization-cases">
+                    <div class="case-item">
+                      <i class="fas fa-car-crash"></i>
+                      <span>Veículos sinistrados</span>
+                    </div>
+                    <div class="case-item">
+                      <i class="fas fa-wrench"></i>
+                      <span>Veículos modificados</span>
+                    </div>
+                    <div class="case-item">
+                      <i class="fas fa-plus-circle"></i>
+                      <span>Inclusão de kit GNV</span>
+                    </div>
+                    <div class="case-item">
+                      <i class="fas fa-minus-circle"></i>
+                      <span>Retirada de kit GNV</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section py-5 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h3 class="h4 mb-3">Ainda tem dúvidas?</h3>
+        <p class="lead mb-4">Nossa equipe está pronta para ajudá-lo</p>
+        <div class="d-flex gap-3 justify-content-center">
+          <a routerLink="/contato" class="btn btn-success">
+            <i class="fas fa-phone me-2"></i>Entre em Contato
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=554133573939" class="btn btn-outline-success">
+            <i class="fab fa-whatsapp me-2"></i>WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

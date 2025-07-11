@@ -6,6 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./servicos.component.css']
 })
 export class ServicosComponent {
-  active= 1;
+  active = 1;
 
+  scrollToSection(sectionId: string) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  }
 }
