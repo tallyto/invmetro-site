@@ -1,15 +1,15 @@
 /* Hero Section */
 .hero-section {
-  position: relative;
-  height: 350px;
-  background: #28a745;
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  min-height: 40vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  position: relative;
   overflow: hidden;
 }
 
-.hero-overlay {
+.hero-section::before {
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -19,39 +19,56 @@
   z-index: 1;
 }
 
-.hero-content {
+.hero-section .container {
   position: relative;
   z-index: 2;
+}
+
+.hero-content {
   text-align: center;
   color: white;
   max-width: 800px;
-  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .hero-title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero-subtitle {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
   opacity: 0.9;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-buttons .btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 500;
+  min-width: 150px;
 }
 
 /* Services Section */
 .services-section {
-  padding: 3rem 0;
+  padding: 4rem 0;
   background: #f8f9fa;
 }
 
 .section-title {
-  font-size: 2rem;
-  color: #28a745;
+  font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 0.8rem;
+  color: #28a745;
+  margin-bottom: 1rem;
 }
 
 .section-subtitle {
@@ -60,44 +77,365 @@
   margin-bottom: 2rem;
 }
 
-.services-accordion {
-  max-width: 1200px;
+.service-card {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(40, 167, 69, 0.1);
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(135deg, #28a745, #20c997);
+}
+
+.service-card.featured-service {
+  border: 2px solid #28a745;
+  box-shadow: 0 15px 40px rgba(40, 167, 69, 0.2);
+}
+
+.service-card.featured-service::before {
+  height: 6px;
+}
+
+.service-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #28a745, #20c997);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  color: white;
+  font-size: 2rem;
+  box-shadow: 0 8px 25px rgba(40, 167, 69, 0.3);
+}
+
+.service-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #212529;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.service-description {
+  color: #6c757d;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.service-details {
+  margin-top: 1.5rem;
+}
+
+.service-details h5 {
+  color: #28a745;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.docs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.docs-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  background: rgba(40, 167, 69, 0.05);
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.docs-list li i {
+  color: #28a745;
+  font-size: 0.8rem;
+  margin-top: 0.1rem;
+  flex-shrink: 0;
+}
+
+.service-price-info {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: rgba(40, 167, 69, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  color: #28a745;
+  font-weight: 600;
+}
+
+.reference-link {
+  color: #28a745;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.reference-link:hover {
+  color: #218838;
+  text-decoration: underline;
+}
+
+.price-highlight {
+  background: linear-gradient(135deg, #28a745, #20c997);
+  color: white;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.price-label {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.price-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Pricing Section */
+.pricing-section {
+  padding: 4rem 0;
+  background: white;
+}
+
+.pricing-navigation {
+  margin-bottom: 2rem;
+}
+
+.pricing-navigation .nav-pills {
+  background: #f8f9fa;
+  border-radius: 25px;
+  padding: 0.5rem;
+  max-width: 400px;
   margin: 0 auto;
 }
 
-.accordion-item-custom {
-  background: white;
-  border: 1px solid #f0f0f0;
-  border-radius: 8px;
-  margin-bottom: 15px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-  transition: all 0.3s ease;
+.pricing-navigation .nav-link {
+  color: #6c757d;
+  border-radius: 20px;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background: transparent;
 }
 
-.accordion-item-custom:hover {
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
-  transform: translateY(-1px);
-  border-color: #e9ecef;
-}
-
-.accordion-button-custom {
+.pricing-navigation .nav-link.active {
   background: #28a745;
   color: white;
-  border: none;
-  padding: 18px 25px;
-  font-size: 1rem;
-  font-weight: 600;
-  text-align: left;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
 }
 
-.accordion-button-custom:hover {
-  background: #218838;
+.pricing-content {
+  margin-top: 2rem;
+}
+
+.pricing-card {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(40, 167, 69, 0.1);
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.cta-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.cta-title {
+  font-size: 2rem;
+  font-weight: 700;
   color: white;
+  margin-bottom: 1rem;
+}
+
+.cta-subtitle {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-buttons .btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 500;
+  min-width: 150px;
+}
+
+.btn-light {
+  background: white;
+  border: 2px solid white;
+  color: #28a745;
+}
+
+.btn-light:hover {
+  background: #f8f9fa;
+  color: #218838;
+}
+
+.btn-outline-light {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: white;
+}
+
+.btn-outline-light:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: white;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 45vh;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .services-section {
+    padding: 3rem 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .service-card {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .service-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+
+  .service-title {
+    font-size: 1.2rem;
+  }
+
+  .pricing-navigation .nav-pills {
+    max-width: 100%;
+  }
+
+  .pricing-card {
+    padding: 1.5rem;
+  }
+
+  .cta-title {
+    font-size: 1.5rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    min-height: 35vh;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .services-section {
+    padding: 2rem 0;
+  }
+
+  .service-card {
+    padding: 1rem;
+  }
+
+  .service-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+
+  .pricing-card {
+    padding: 1rem;
+  }
+
+  .cta-section {
+    padding: 2rem 0;
+  }
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
 }
 
 .accordion-button-custom:focus {

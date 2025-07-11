@@ -27,13 +27,13 @@ export class SobreComponent implements OnInit, AfterViewInit {
 
   private animateNumbers() {
     const statNumbers = document.querySelectorAll('.stat-number');
-    
+
     statNumbers.forEach((statNumber: any) => {
       const target = parseInt(statNumber.getAttribute('data-target'));
       const duration = 2000; // 2 segundos
       const increment = target / (duration / 16); // 60 FPS aproximadamente
       let current = 0;
-      
+
       const updateNumber = () => {
         current += increment;
         if (current < target) {
@@ -43,7 +43,7 @@ export class SobreComponent implements OnInit, AfterViewInit {
           statNumber.textContent = target.toString();
         }
       };
-      
+
       // Iniciar animação quando o elemento estiver visível
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -53,7 +53,7 @@ export class SobreComponent implements OnInit, AfterViewInit {
           }
         });
       });
-      
+
       observer.observe(statNumber);
     });
   }

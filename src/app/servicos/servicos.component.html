@@ -3,341 +3,250 @@
   <div class="container">
     <div class="hero-content">
       <h1 class="hero-title">Nossos Serviços</h1>
-      <p class="hero-subtitle">Soluções especializadas em inspeção veicular</p>
+      <p class="hero-subtitle">Soluções completas em inspeção veicular com qualidade e confiabilidade</p>
+      <div class="hero-buttons">
+        <button (click)="scrollToSection('servicos')" class="btn btn-light">
+          <i class="fas fa-list me-2"></i>Ver Serviços
+        </button>
+        <button (click)="scrollToSection('precos')" class="btn btn-outline-light">
+          <i class="fas fa-calculator me-2"></i>Consultar Preços
+        </button>
+      </div>
     </div>
   </div>
-  <div class="hero-overlay"></div>
 </div>
 
 <!-- Services Section -->
-<div class="services-section">
+<section id="servicos" class="services-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <h2 class="section-title">Nossos Serviços</h2>
+        <p class="section-subtitle">Conheça todos os tipos de inspeção veicular que oferecemos</p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <!-- Veículo Sinistro -->
+      <div class="col-lg-6 col-md-6 mb-4">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-car-crash"></i>
+          </div>
+          <h3 class="service-title">Veículo Sinistro</h3>
+          <p class="service-description">
+            Inspeção para veículos que se envolveram em acidentes ou foram bloqueados por seguradoras.
+          </p>
+          <div class="service-details">
+            <h5>Documentos necessários:</h5>
+            <ul class="docs-list">
+              <li><i class="fas fa-check"></i> CRLV/CRV ou Nota Fiscal</li>
+              <li><i class="fas fa-check"></i> RG/CPF ou CNH do proprietário</li>
+              <li><i class="fas fa-check"></i> Notas fiscais dos reparos</li>
+              <li><i class="fas fa-check"></i> B.O. (se sem placas)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- GNV Periódica -->
+      <div class="col-lg-6 col-md-6 mb-4">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <h3 class="service-title">GNV Periódica</h3>
+          <p class="service-description">
+            Inspeção obrigatória anual para veículos com sistema de GNV instalado.
+          </p>
+          <div class="service-details">
+            <h5>Documentos necessários:</h5>
+            <ul class="docs-list">
+              <li><i class="fas fa-check"></i> CRLV/CRV ou Nota Fiscal</li>
+              <li><i class="fas fa-check"></i> RG/CPF ou CNH do proprietário</li>
+              <li><i class="fas fa-check"></i> Selo de inspeção anterior</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kit GNV -->
+      <div class="col-lg-6 col-md-6 mb-4">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <h3 class="service-title">Inclusão/Retirada Kit GNV</h3>
+          <p class="service-description">
+            Inspeção para instalação ou remoção do sistema de GNV no veículo.
+          </p>
+          <div class="service-details">
+            <h5>Documentos necessários:</h5>
+            <ul class="docs-list">
+              <li><i class="fas fa-check"></i> CRLV/CRV ou Nota Fiscal</li>
+              <li><i class="fas fa-check"></i> RG/CPF ou CNH do proprietário</li>
+              <li><i class="fas fa-check"></i> Notas fiscais e atestados</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Veículo Modificado -->
+      <div class="col-lg-6 col-md-6 mb-4">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-wrench"></i>
+          </div>
+          <h3 class="service-title">Veículo Modificado</h3>
+          <p class="service-description">
+            Inspeção para veículos com modificações estruturais, carroceria, chassi ou equipamentos.
+          </p>
+          <div class="service-details">
+            <h5>Documentos necessários:</h5>
+            <ul class="docs-list">
+              <li><i class="fas fa-check"></i> CRLV/CRV ou Nota Fiscal</li>
+              <li><i class="fas fa-check"></i> RG/CPF ou CNH do proprietário</li>
+              <li><i class="fas fa-check"></i> Notas fiscais da modificação</li>
+              <li><i class="fas fa-check"></i> CAT e ART (quando aplicável)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Inspeção Especial -->
+      <div class="col-lg-6 col-md-6 mb-4">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-bus"></i>
+          </div>
+          <h3 class="service-title">Inspeção Especial</h3>
+          <p class="service-description">
+            Inspeção para veículos escolares, ANTT, DER, moto-frete e URBS.
+          </p>
+          <div class="service-details">
+            <h5>Documentos necessários:</h5>
+            <ul class="docs-list">
+              <li><i class="fas fa-check"></i> CRLV/CRV ou Nota Fiscal</li>
+              <li><i class="fas fa-check"></i> RG/CPF ou CNH do proprietário</li>
+              <li><i class="fas fa-check"></i> Aferição do Tacógrafo (quando aplicável)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Motor-casa -->
+      <div class="col-lg-6 col-md-6 mb-4">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-home"></i>
+          </div>
+          <h3 class="service-title">Motor-casa</h3>
+          <p class="service-description">
+            Inspeção para veículos adaptados para motor-casa conforme regulamentação.
+          </p>
+          <div class="service-details">
+            <h5>Documentos de referência:</h5>
+            <ul class="docs-list">
+              <li><i class="fas fa-external-link-alt"></i>
+                <a href="https://www.in.gov.br/materia/-/asset_publisher/Kujrw0TZC2Mb/content/id/51523850/do1-2018-11-23-resolucao-n-743-de-12-de-novembro-de-2018-51523534"
+                   target="_blank" class="reference-link">Resolução CONTRAN nº 743/2018</a>
+              </li>
+              <li><i class="fas fa-external-link-alt"></i>
+                <a href="https://www.in.gov.br/materia/-/asset_publisher/Kujrw0TZC2Mb/content/id/69873315"
+                   target="_blank" class="reference-link">Portaria DENATRAN</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- CITV -->
+      <div class="col-lg-6 col-md-6 mb-4">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-globe-americas"></i>
+          </div>
+          <h3 class="service-title">CITV - Mercosul</h3>
+          <p class="service-description">
+            Certificado de Inspeção Técnica Veicular para transporte rodoviário internacional.
+          </p>
+          <div class="service-details">
+            <h5>Documentos necessários:</h5>
+            <ul class="docs-list">
+              <li><i class="fas fa-check"></i> CRLV/CRV ou Nota Fiscal</li>
+              <li><i class="fas fa-check"></i> RG/CPF ou CNH do proprietário</li>
+            </ul>
+            <div class="service-price-info">
+              <strong>Valor: R$ 500,00</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing Section -->
+<section id="precos" class="pricing-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <h2 class="section-title">Tabela de Preços</h2>
+        <p class="section-subtitle">Consulte os valores dos nossos serviços por unidade</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="pricing-navigation">
+          <div class="nav nav-pills nav-justified" id="pricing-tabs" role="tablist">
+            <button class="nav-link active" id="curitiba-tab" data-bs-toggle="pill" data-bs-target="#curitiba"
+                    type="button" role="tab" aria-controls="curitiba" aria-selected="true">
+              <i class="fas fa-building me-2"></i>
+              Curitiba
+            </button>
+            <button class="nav-link" id="campo-largo-tab" data-bs-toggle="pill" data-bs-target="#campo-largo"
+                    type="button" role="tab" aria-controls="campo-largo" aria-selected="false">
+              <i class="fas fa-building me-2"></i>
+              Campo Largo
+            </button>
+          </div>
+        </div>
+
+        <div class="tab-content pricing-content" id="pricing-content">
+          <div class="tab-pane fade show active" id="curitiba" role="tabpanel" aria-labelledby="curitiba-tab">
+            <div class="pricing-card">
+              <app-table-curitiba></app-table-curitiba>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="campo-largo" role="tabpanel" aria-labelledby="campo-largo-tab">
+            <div class="pricing-card">
+              <app-table-campo-largo></app-table-campo-largo>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h2 class="section-title">Lista de Serviços</h2>
-        <p class="section-subtitle">Conheça nossos serviços especializados em inspeção veicular</p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-12">
-        <div class="services-accordion">
-          <div class="accordion">
-
-            <!-- Veículo Sinistro -->
-            <div class="accordion-item accordion-item-custom">
-              <h2 class="accordion-header">
-                <button class="accordion-button accordion-button-custom collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#sinistro"
-                        aria-expanded="false"
-                        aria-controls="sinistro">
-                  <i class="fas fa-car-crash me-3"></i>
-                  Veículo Sinistro
-                </button>
-              </h2>
-              <div id="sinistro" class="accordion-collapse collapse" data-bs-parent=".accordion">
-                <div class="accordion-body">
-                  <div class="accordion-content">
-                    <p class="service-description">
-                      Veículos que se envolveram em acidente de trânsito ou foram bloqueados por seguradoras devem passar por inspeção
-                      para regularização.
-                    </p>
-
-                    <h5 class="docs-title">Documentos necessários:</h5>
-                    <ul class="docs-list">
-                      <li><i class="fas fa-check"></i> CRLV/CRV ou Nota Fiscal de aquisição</li>
-                      <li><i class="fas fa-check"></i> RG/CPF ou CNH do proprietário</li>
-                      <li><i class="fas fa-check"></i> Notas fiscais dos itens consertados</li>
-                      <li><i class="fas fa-check"></i> B.O. (se o veículo estiver sem placas)</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- GNV Periódica -->
-            <div class="accordion-item accordion-item-custom">
-              <h2 class="accordion-header">
-                <button class="accordion-button accordion-button-custom collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#gnv"
-                        aria-expanded="false"
-                        aria-controls="gnv">
-                  <i class="fas fa-leaf me-3"></i>
-                  GNV Periódica
-                </button>
-              </h2>
-              <div id="gnv" class="accordion-collapse collapse" data-bs-parent=".accordion">
-                <div class="accordion-body">
-                  <div class="accordion-content">
-                    <p class="service-description">
-                      Inspeção obrigatória para todos os veículos adaptados com GNV. Será avaliado tanto o
-                      funcionamento do sistema de gás quanto o funcionamento geral do veículo.
-                    </p>
-
-                    <h5 class="docs-title">Documentos necessários:</h5>
-                    <ul class="docs-list">
-                      <li><i class="fas fa-check"></i> CRLV/CRV ou Nota Fiscal de aquisição</li>
-                      <li><i class="fas fa-check"></i> RG/CPF ou CNH do proprietário</li>
-                      <li><i class="fas fa-check"></i> Selo de inspeção emitido na inspeção do ano anterior</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Inclusão/Retirada do Kit GNV -->
-            <div class="accordion-item accordion-item-custom">
-              <h2 class="accordion-header">
-                <button class="accordion-button accordion-button-custom collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#kitGnv"
-                        aria-expanded="false"
-                        aria-controls="kitGnv">
-                  <i class="fas fa-cogs me-3"></i>
-                  Inclusão/Retirada do Kit GNV
-                </button>
-              </h2>
-              <div id="kitGnv" class="accordion-collapse collapse" data-bs-parent=".accordion">
-                <div class="accordion-body">
-                  <div class="accordion-content">
-                    <p class="service-description">
-                      Para adaptar ou retirar o sistema de GNV, obtenha primeiro a autorização prévia junto ao DETRAN.
-                      Após a modificação, traga o veículo para avaliação.
-                    </p>
-
-                    <h5 class="docs-title">Documentos necessários:</h5>
-                    <ul class="docs-list">
-                      <li><i class="fas fa-check"></i> CRLV/CRV ou Nota Fiscal de aquisição</li>
-                      <li><i class="fas fa-check"></i> RG/CPF ou CNH do proprietário</li>
-                      <li><i class="fas fa-check"></i> Notas fiscais do serviço e atestado de qualidade do instalador</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Veículo Modificado -->
-            <div class="accordion-item accordion-item-custom">
-              <h2 class="accordion-header">
-                <button class="accordion-button accordion-button-custom collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#modificado"
-                        aria-expanded="false"
-                        aria-controls="modificado">
-                  <i class="fas fa-wrench me-3"></i>
-                  Veículo Modificado
-                </button>
-              </h2>
-              <div id="modificado" class="accordion-collapse collapse" data-bs-parent=".accordion">
-                <div class="accordion-body">
-                  <div class="accordion-content">
-                    <p class="service-description">
-                      Troca de carroceria, inclusão de mecanismo operacional, cabine suplementar, tanque suplementar,
-                      eixos adicionais, alongamento de chassi, adaptação para autoescola/PNE, rebaixamento/elevação, blindagem.
-                    </p>
-
-                    <h5 class="docs-title">Documentos necessários:</h5>
-                    <ul class="docs-list">
-                      <li><i class="fas fa-check"></i> CRLV/CRV ou Nota Fiscal de aquisição</li>
-                      <li><i class="fas fa-check"></i> RG/CPF ou CNH do proprietário</li>
-                      <li><i class="fas fa-check"></i> Notas fiscais da modificação</li>
-                      <li><i class="fas fa-check"></i> CAT e ART (quando aplicável)</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Inspeção Especial -->
-            <div class="accordion-item accordion-item-custom">
-              <h2 class="accordion-header">
-                <button class="accordion-button accordion-button-custom collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#especial"
-                        aria-expanded="false"
-                        aria-controls="especial">
-                  <i class="fas fa-bus me-3"></i>
-                  Inspeção: Escolar, ANTT, DER, Moto-Frete, URBS
-                </button>
-              </h2>
-              <div id="especial" class="accordion-collapse collapse" data-bs-parent=".accordion">
-                <div class="accordion-body">
-                  <div class="accordion-content">
-                    <p class="service-description">
-                      Veículos para transporte de escolares devem obedecer a várias legislações de várias instâncias
-                      (federal, estadual e municipal) e que para homologação precisam passar por inspeção.
-                    </p>
-
-                    <h5 class="docs-title">Documentos necessários:</h5>
-                    <ul class="docs-list">
-                      <li><i class="fas fa-check"></i> CRLV/CRV ou Nota Fiscal de aquisição (Certidão de Registro de veículo)</li>
-                      <li><i class="fas fa-check"></i> RG/CPF ou CNH (Documento de identificação do proprietário ou condutor do veículo)</li>
-                      <li><i class="fas fa-check"></i> Aferição do Tacógrafo (quando aplicável)</li>
-                    </ul>
-
-                    <p class="service-description">
-                      Tipos de inspeções especiais (como fabricação artesanal) ou para atender clientes ou normas
-                      específicas, entre em contato conosco.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Motor-casa -->
-            <div class="accordion-item accordion-item-custom">
-              <h2 class="accordion-header">
-                <button class="accordion-button accordion-button-custom collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#motorCasa"
-                        aria-expanded="false"
-                        aria-controls="motorCasa">
-                  <i class="fas fa-home me-3"></i>
-                  Motor-casa
-                </button>
-              </h2>
-              <div id="motorCasa" class="accordion-collapse collapse" data-bs-parent=".accordion">
-                <div class="accordion-body">
-                  <div class="accordion-content">
-                    <p class="service-description">
-                      Segue nos links abaixo a resolução e portaria que estabelece requisitos técnicos para modificação ou
-                      transformação de veículos para motor-casa, assim como sua circulação e fiscalização.
-                    </p>
-
-                    <div class="mt-4">
-                      <p><strong>Documentos de referência:</strong></p>
-                      <ul class="docs-list">
-                        <li>
-                          <i class="fas fa-external-link-alt"></i>
-                          <a href="https://www.in.gov.br/materia/-/asset_publisher/Kujrw0TZC2Mb/content/id/51523850/do1-2018-11-23-resolucao-n-743-de-12-de-novembro-de-2018-51523534" target="_blank">
-                            Resolução CONTRAN nº 743/2018
-                          </a>
-                        </li>
-                        <li>
-                          <i class="fas fa-external-link-alt"></i>
-                          <a href="https://www.in.gov.br/materia/-/asset_publisher/Kujrw0TZC2Mb/content/id/69873315" target="_blank">
-                            Portaria DENATRAN
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- CITV -->
-            <div class="accordion-item accordion-item-custom">
-              <h2 class="accordion-header">
-                <button class="accordion-button accordion-button-custom collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#citv"
-                        aria-expanded="false"
-                        aria-controls="citv">
-                  <i class="fas fa-globe-americas me-3"></i>
-                  CITV – Certificado de Inspeção Técnica Veicular (Mercosul)
-                </button>
-              </h2>
-              <div id="citv" class="accordion-collapse collapse" data-bs-parent=".accordion">
-                <div class="accordion-body">
-                  <div class="accordion-content">
-                    <p class="service-description">
-                      Inspeção Técnica Veicular (ITV) em veículos de transporte rodoviário internacional (MERCOSUL) de cargas
-                      e passageiros.
-                    </p>
-                    <p class="service-description">
-                      Veículos que transitam em outros países estão sujeitos à fiscalização quanto à aprovação do veículo em
-                      inspeção de segurança veicular nos moldes da Resolução Mercosul n° 75/97.
-                    </p>
-
-                    <h5 class="docs-title">Documentos necessários:</h5>
-                    <ul class="docs-list">
-                      <li><i class="fas fa-check"></i> CRLV/CRV ou Nota Fiscal de aquisição (Certidão de Registro de veículo)</li>
-                      <li><i class="fas fa-check"></i> RG/CPF ou CNH (Documento de identificação do proprietário ou condutor do veículo)</li>
-                    </ul>
-
-                    <div class="alert alert-info mt-4">
-                      <h6><i class="fas fa-info-circle me-2"></i>Valor do Serviço</h6>
-                      <p class="mb-0">Valor para qualquer veículo: <strong>R$ 500,00</strong></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
+        <h3 class="cta-title">Precisa de mais informações?</h3>
+        <p class="cta-subtitle">Entre em contato conosco para esclarecimentos sobre nossos serviços</p>
+        <div class="cta-buttons">
+          <a href="https://api.whatsapp.com/send?phone=554133573939" class="btn btn-light btn-lg">
+            <i class="fab fa-whatsapp me-2"></i>WhatsApp
+          </a>
+          <a routerLink="/contato" class="btn btn-outline-light btn-lg">
+            <i class="fas fa-phone me-2"></i>Contato
+          </a>
         </div>
       </div>
     </div>
   </div>
-</div>
-
-<!-- Pricing Section -->
-<div class="pricing-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center mb-4">
-        <h2 class="section-title">Tabela de Preços</h2>
-        <p class="section-subtitle">Selecione a unidade para consultar os valores dos serviços</p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-12">
-        <div class="pricing-tabs">
-          <ul class="nav nav-pills nav-justified mb-4" id="pricingTabs" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link nav-link-custom active"
-                      id="curitiba-tab"
-                      data-bs-toggle="pill"
-                      data-bs-target="#curitiba"
-                      type="button"
-                      role="tab"
-                      aria-controls="curitiba"
-                      aria-selected="true">
-                <i class="fas fa-map-marker-alt me-2"></i>
-                Unidade Curitiba
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link nav-link-custom"
-                      id="campo-largo-tab"
-                      data-bs-toggle="pill"
-                      data-bs-target="#campo-largo"
-                      type="button"
-                      role="tab"
-                      aria-controls="campo-largo"
-                      aria-selected="false">
-                <i class="fas fa-map-marker-alt me-2"></i>
-                Unidade Campo Largo
-              </button>
-            </li>
-          </ul>
-
-          <div class="tab-content" id="pricingTabsContent">
-            <div class="tab-pane fade show active" id="curitiba" role="tabpanel" aria-labelledby="curitiba-tab">
-              <div class="tab-content-wrapper">
-                <app-table-curitiba></app-table-curitiba>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="campo-largo" role="tabpanel" aria-labelledby="campo-largo-tab">
-              <div class="tab-content-wrapper">
-                <app-table-campo-largo></app-table-campo-largo>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+</section>
 
