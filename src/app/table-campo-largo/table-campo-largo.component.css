@@ -1,0 +1,132 @@
+/* Table Styling */
+.table-responsive {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  margin-bottom: 2rem;
+  border: 1px solid #f0f0f0;
+}
+
+.table {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+.table thead th {
+  background: #28a745;
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 15px 12px;
+  border: none;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.table tbody tr {
+  transition: all 0.3s ease;
+}
+
+.table tbody tr:hover {
+  background-color: #f8f9fa;
+  transform: translateY(-1px);
+}
+
+.table tbody th {
+  background: #f8f9fa;
+  color: #28a745;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 12px;
+  border-right: 2px solid #28a745;
+}
+
+.table tbody td {
+  padding: 12px;
+  color: #495057;
+  font-weight: 500;
+  vertical-align: middle;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(40, 167, 69, 0.03);
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+  background-color: white;
+}
+
+/* Section Title */
+.section-title {
+  color: #28a745;
+  font-weight: 700;
+  text-align: center;
+  margin: 2rem 0 1.5rem 0;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: #28a745;
+  border-radius: 2px;
+}
+
+/* Price highlighting */
+.table tbody td:contains('R$') {
+  color: #28a745;
+  font-weight: 600;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .table-responsive {
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+  }
+
+  .table thead th {
+    padding: 12px 8px;
+    font-size: 0.8rem;
+  }
+
+  .table tbody th,
+  .table tbody td {
+    padding: 10px 8px;
+    font-size: 0.85rem;
+  }
+
+  .section-title {
+    font-size: 1.1rem;
+    margin: 1.5rem 0 1rem 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .table thead th {
+    padding: 10px 6px;
+    font-size: 0.75rem;
+  }
+
+  .table tbody th,
+  .table tbody td {
+    padding: 8px 6px;
+    font-size: 0.8rem;
+  }
+
+  .section-title {
+    font-size: 1rem;
+  }
+}
