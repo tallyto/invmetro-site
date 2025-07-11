@@ -6,6 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./servicos.component.css']
 })
 export class ServicosComponent {
-  active= 1;
-
+  active = 1;
 }

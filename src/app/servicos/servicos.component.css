@@ -1,12 +1,370 @@
-.gray-banner {
-  background-color: #ddd; /* Cor cinza */
-  padding: 20px;
-
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 350px;
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.green-title {
-  color: #4CAF50; /* Cor verde */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
   text-align: center;
+  color: white;
+  max-width: 800px;
+  padding: 0 20px;
 }
 
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
 
+.hero-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+/* Services Section */
+.services-section {
+  padding: 3rem 0;
+  background: #f8f9fa;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #28a745;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #6c757d;
+  margin-bottom: 2rem;
+}
+
+.services-accordion {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.accordion-item-custom {
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.accordion-item-custom:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-1px);
+}
+
+.accordion-button-custom {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 18px 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.accordion-button-custom:hover {
+  background: #218838;
+  color: white;
+}
+
+.accordion-button-custom:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.accordion-button-custom i {
+  color: white;
+  margin-right: 12px;
+  font-size: 1.1rem;
+}
+
+.accordion-content {
+  padding: 20px 25px;
+  background: white;
+  border-top: 1px solid #e9ecef;
+}
+
+.service-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+.docs-title {
+  color: #28a745;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.docs-list {
+  list-style: none;
+  padding: 0;
+}
+
+.docs-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #f8f9fa;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.docs-list li:last-child {
+  border-bottom: none;
+}
+
+.docs-list i {
+  color: #28a745;
+  margin-top: 2px;
+  font-size: 1rem;
+}
+
+.docs-list a {
+  color: #28a745;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.docs-list a:hover {
+  color: #218838;
+  text-decoration: underline;
+}
+
+/* Pricing Section */
+.pricing-section {
+  padding: 3rem 0;
+  background: white;
+}
+
+.pricing-tabs {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-pills .nav-link-custom {
+  background: #f8f9fa;
+  color: #495057;
+  border: 1px solid #dee2e6;
+  border-radius: 50px;
+  padding: 12px 25px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin: 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.nav-pills .nav-link-custom:hover {
+  background: #e9ecef;
+  color: #28a745;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-pills .nav-link-custom.active {
+  background: #28a745;
+  color: white;
+  border-color: #28a745;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(40, 167, 69, 0.3);
+}
+
+.nav-pills .nav-link-custom i {
+  color: inherit;
+  margin-right: 8px;
+}
+
+.tab-content-wrapper {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e9ecef;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+/* Alert Box */
+.alert-info {
+  background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+  color: #1565c0;
+  border: 1px solid #bbdefb;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(21, 101, 192, 0.1);
+}
+
+.alert h6 {
+  color: #1565c0;
+  font-weight: 700;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.alert i {
+  color: #1976d2;
+  font-size: 1.1rem;
+}
+
+.alert p {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Links */
+a {
+  color: #28a745;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #218838;
+  text-decoration: underline;
+}
+
+/* Accordion button effects */
+.accordion-button-custom:not(.collapsed) {
+  background: #218838;
+  color: white;
+}
+
+.accordion-button-custom::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  margin-left: auto;
+  transition: transform 0.3s ease;
+}
+
+.accordion-button-custom:not(.collapsed)::after {
+  transform: rotate(180deg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .accordion-button-custom {
+    padding: 15px 20px;
+    font-size: 0.95rem;
+  }
+  
+  .accordion-content {
+    padding: 18px 20px;
+  }
+  
+  .services-section,
+  .pricing-section {
+    padding: 2.5rem 0;
+  }
+  
+  .nav-pills .nav-link-custom {
+    margin: 5px 0;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  
+  .tab-content-wrapper {
+    padding: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    height: 280px;
+  }
+  
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+  
+  .services-section,
+  .pricing-section {
+    padding: 2rem 0;
+  }
+  
+  .section-title {
+    font-size: 1.6rem;
+  }
+  
+  .accordion-button-custom {
+    padding: 12px 18px;
+    font-size: 0.9rem;
+  }
+  
+  .accordion-button-custom i {
+    margin-right: 10px;
+    font-size: 1rem;
+  }
+  
+  .accordion-content {
+    padding: 15px 18px;
+  }
+  
+  .nav-pills .nav-link-custom {
+    margin: 5px 0;
+    padding: 8px 18px;
+    font-size: 0.85rem;
+  }
+  
+  .tab-content-wrapper {
+    padding: 15px;
+  }
+  
+  .services-accordion {
+    max-width: 100%;
+  }
+}
