@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "invmetro-site:build:production"
+              "buildTarget": "invmetro-site:build:production"
             },
             "development": {
-              "browserTarget": "invmetro-site:build:development"
+              "buildTarget": "invmetro-site:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "invmetro-site:build"
+            "buildTarget": "invmetro-site:build"
           }
         },
         "test": {
